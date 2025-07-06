@@ -1,6 +1,14 @@
+import { Container } from "@mui/material";
+import Masthead from "../components/Masthead";
+
 export const HomePage = () => {
     return (
-        <h2>Bem-vindo ao meu bookstore!</h2>
+        <>
+            <Container>
+                <Masthead />
+                <h2>Bem-vindo ao meu bookstore!</h2>
+            </Container>
+        </>
     )
 }
 
