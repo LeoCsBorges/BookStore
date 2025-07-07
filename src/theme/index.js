@@ -5,10 +5,15 @@ const theme = createTheme({
     primary: {
       main: "#0B7C6B",
       light: "#E4FFFB",
+      contrastText: "red",
     },
     secondary: {
       main: "#FF6320",
       light: "#FFECE3",
+    },
+    common: {
+      white: "#FFFFFF",
+      black: "#000000",
     },
     dark: {
       tone1: "#101313",
@@ -16,7 +21,7 @@ const theme = createTheme({
       tone3: "#848786",
       tone4: "#CCCCCC",
       tone5: "#E4E9E8",
-      tone6: "#F4F9F8",
+      tone6: "#EFF6F5",
       tone7: "#F9FCFB",
     },
     statusColor: {
