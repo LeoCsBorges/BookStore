@@ -1,6 +1,8 @@
 import styled from "@emotion/styled";
 import { Box, Container } from "@mui/material";
-import CategoriesBox from "./CategoriesBox";
+import CategoriesMenu from "./CategoriesMenu";
+import NavMenu from "./NavMenu";
+import FindStoreMenu from "./FindStoreMenu";
 
 const StyledBox = styled(Box)(({ theme }) => ({
   color: theme.palette.dark.tone2,
@@ -14,13 +16,14 @@ export const BottomHeader = () => {
       <Container>
         <Box display="flex" justifyContent="space-between" alignItems="center">
           {/* categories */}
-          <CategoriesBox />
+          <CategoriesMenu />
 
           {/* navigation  */}
-          <Box>home products contact about us</Box>
+          <NavMenu />
+          {/* <Box>home products contact about us</Box> */}
 
           {/* find a store */}
-          <Box>ache um loja nossa</Box>
+          <FindStoreMenu />
         </Box>
       </Container>
     </StyledBox>

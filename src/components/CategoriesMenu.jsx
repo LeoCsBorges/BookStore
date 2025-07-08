@@ -35,7 +35,7 @@ const StyledSelect = styled(Select)(() => ({
   },
 }));
 
-export const CategoriesBox = () => {
+export const CategoriesMenu = () => {
   const [categories, setCategories] = useState("categories");
 
   return (
@@ -73,4 +73,4 @@ export const CategoriesBox = () => {
   );
 };
 
-export default CategoriesBox;
+export default CategoriesMenu;

@@ -1,12 +1,9 @@
 import logo from "../assets/bookstore-logo2.png";
 import styled from "@emotion/styled";
-import { Box, Container, Link, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
+import { Box, Container } from "@mui/material";
 import SearchBar from "./SearchBar";
-import {
-  FavoriteBorderOutlined,
-  PersonOutline,
-  ShoppingBagOutlined,
-} from "@mui/icons-material";
+import UserBadges from "./UserBadges";
 
 const StyledBox = styled(Box)(({ theme }) => ({
   color: theme.palette.dark.tone2,
@@ -20,9 +17,9 @@ export const TopHeader = () => {
     <StyledBox>
       <Container>
         <Box display="flex" justifyContent="space-between" alignItems="center">
-          {/* logo */}
+          {/* main logo */}
           <Box sx={{ width: "auto", height: 64 }}>
-            <Link href="/">
+            <Link to="/">
               <Box
                 component="img"
                 src={logo}
@@ -36,23 +33,11 @@ export const TopHeader = () => {
             </Link>
           </Box>
 
-          {/* search  */}
-          <Box>
-            <SearchBar />
-          </Box>
+          {/* search */}
+          <SearchBar />
 
-          {/* user, favorites, shopping cart */}
-          <Box display="flex" gap=".5rem">
-            <Link href="#" color="inherit">
-              <PersonOutline />
-            </Link>
-            <Link href="#" color="inherit">
-              <FavoriteBorderOutlined />
-            </Link>
-            <Link href="#" color="inherit">
-              <ShoppingBagOutlined />
-            </Link>
-          </Box>
+          {/* login, favorites, shopping cart */}
+          <UserBadges />
         </Box>
       </Container>
     </StyledBox>
